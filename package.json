@@ -1,6 +1,6 @@
 {
   "name": "prevent-scroll-history",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Prevent go back/forward in browser history when scroll to an element",
   "main": "dist/index.js",
   "scripts": {
