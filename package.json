@@ -4,15 +4,15 @@
   "description": "Prevent go back/forward in browser history when scroll to an element",
   "main": "dist/index.js",
   "scripts": {
-    "build": "npm run build-lib && npm run build-demo",
-    "build-lib": "browserify index.js -o dist/index.js",
+    "start": "http-server demo",
     "build-demo": "browserify demo.js -o demo/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "preversion": "npm run build && git add dist && git add demo/index.js"
+    "preversion": "npm run build-demo && git add demo/index.js"
   },
   "author": "Eduard Castellano",
   "license": "ISC",
   "devDependencies": {
-    "browserify": "^13.1.0"
+    "browserify": "^13.1.0",
+    "http-server": "^0.9.0"
   }
 }
